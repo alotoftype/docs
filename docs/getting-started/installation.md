@@ -23,7 +23,7 @@ Just download, install, and start building stuff.
 
 ### macOS
 - macOS **11 Big Sur** or later  
-- **Apple Silicon** processor  
+- **Apple Silicon** or **Intel** processor  
 - **4 GB RAM** (Voiden runs fine on your 2019 MacBook, promise)  
 - **200 MB** available space  
 
