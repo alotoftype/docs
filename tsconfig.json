@@ -1,0 +1,12 @@
+{
+  // This file is not used, compilation is based on jsconfig.json
+  // or jsconfig.json is merged into tsconfig.json
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@site/*": ["./*"]
+    }
+  },
+  "exclude": [".docusaurus", "build"]
+}
+

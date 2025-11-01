@@ -1,0 +1,464 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* Voiden Brand Colors */
+:root {
+  /* Voiden color palette - Refined aesthetic colors */
+  --voiden-darker: hsl(240, 8%, 8%);
+  --voiden-teal: #22d3ee;
+  --voiden-purple: #a78bfa;
+  --voiden-pink: #f472b6;
+
+  /* Background and foreground - Softer dark theme */
+  --background: 240 8% 8%;
+  --foreground: 240 5% 96%;
+  --card: 240 6% 10%;
+  --card-foreground: 240 5% 96%;
+  --popover: 240 6% 10%;
+  --popover-foreground: 240 5% 96%;
+  --primary: 240 5% 96%;
+  --primary-foreground: 240 8% 12%;
+  --secondary: 240 4% 16%;
+  --secondary-foreground: 240 5% 96%;
+  --muted: 240 4% 16%;
+  --muted-foreground: 240 5% 65%;
+  --accent: 240 4% 16%;
+  --accent-foreground: 240 5% 96%;
+  --destructive: 0 65% 50%;
+  --destructive-foreground: 240 5% 96%;
+  --border: 240 4% 18%;
+  --input: 240 4% 18%;
+  --ring: 240 5% 84%;
+  --radius: 0.75rem;
+
+  /* Override Infima colors with Voiden theme */
+  --ifm-color-primary: var(--voiden-purple);
+  --ifm-color-primary-dark: #8b5cf6;
+  --ifm-color-primary-darker: #7c3aed;
+  --ifm-color-primary-darkest: #6d28d9;
+  --ifm-color-primary-light: #c4b5fd;
+  --ifm-color-primary-lighter: #ddd6fe;
+  --ifm-color-primary-lightest: #ede9fe;
+
+  --ifm-background-color: var(--voiden-darker);
+  --ifm-background-surface-color: hsl(240, 6%, 10%);
+  
+  --ifm-font-family-base: 'Source Sans 3', system-ui, -apple-system, sans-serif !important;
+  --ifm-font-family-monospace: 'JetBrains Mono', 'Courier New', monospace !important;
+
+  --ifm-heading-font-family: 'Source Sans 3', system-ui, -apple-system, sans-serif !important;
+  --ifm-code-font-size: 95%;
+  --ifm-font-weight-bold: 700;
+  --ifm-font-weight-semibold: 600;
+  --ifm-font-weight-normal: 400;
+  
+  --ifm-color-content: hsl(var(--foreground));
+  --ifm-color-content-secondary: hsl(var(--muted-foreground));
+
+  --ifm-navbar-background-color: var(--voiden-darker);
+  --ifm-navbar-link-color: hsl(240, 5%, 75%);
+  --ifm-navbar-link-hover-color: hsl(240, 5%, 96%);
+
+  --ifm-footer-background-color: var(--voiden-darker);
+  --ifm-footer-color: hsl(240, 5%, 70%);
+  --ifm-footer-link-color: hsl(240, 5%, 90%);
+
+  --ifm-menu-link-color: hsl(240, 5%, 80%);
+  --ifm-menu-link-hover-color: hsl(240, 5%, 96%);
+  
+  --ifm-table-border-color: hsl(var(--border));
+  
+  --docusaurus-highlighted-code-line-bg: rgba(167, 139, 250, 0.12);
+  
+  /* Custom border radius */
+  --ifm-border-radius: var(--radius);
+  
+  /* Smooth scrolling */
+  scroll-behavior: smooth;
+}
+
+/* Dark theme (default for Voiden) */
+[data-theme='dark'] {
+  --ifm-color-primary: var(--voiden-purple);
+  --ifm-color-primary-dark: #9333ea;
+  --ifm-color-primary-darker: #7e22ce;
+  --ifm-color-primary-darkest: #6b21a8;
+  --ifm-color-primary-light: #c084fc;
+  --ifm-color-primary-lighter: #d8b4fe;
+  --ifm-color-primary-lightest: #e9d5ff;
+  
+  --docusaurus-highlighted-code-line-bg: rgba(167, 139, 250, 0.15);
+}
+
+/* Light theme override */
+[data-theme='light'] {
+  /* Light theme color palette - Warm, soft colors */
+  --voiden-darker: hsl(240, 8%, 98%);
+  --voiden-teal: #06b6d4;
+  --voiden-purple: #8b5cf6;
+  --voiden-pink: #ec4899;
+
+  /* Background and foreground for light mode - Softer than pure white */
+  --background: 240 8% 98%;
+  --foreground: 240 6% 12%;
+  --card: 240 8% 99%;
+  --card-foreground: 240 6% 12%;
+  --popover: 240 8% 99%;
+  --popover-foreground: 240 6% 12%;
+  --primary: 240 6% 12%;
+  --primary-foreground: 240 8% 98%;
+  --secondary: 240 5% 94%;
+  --secondary-foreground: 240 6% 12%;
+  --muted: 240 5% 94%;
+  --muted-foreground: 240 4% 45%;
+  --accent: 240 5% 94%;
+  --accent-foreground: 240 6% 12%;
+  --destructive: 0 70% 55%;
+  --destructive-foreground: 240 8% 98%;
+  --border: 240 5% 88%;
+  --input: 240 5% 88%;
+  --ring: 240 6% 15%;
+
+  /* Override Infima colors for light theme */
+  --ifm-background-color: hsl(240, 8%, 98%);
+  --ifm-background-surface-color: hsl(240, 6%, 96%);
+  --ifm-color-content: hsl(240, 6%, 15%);
+  --ifm-color-content-secondary: hsl(240, 4%, 45%);
+
+  --ifm-navbar-background-color: hsl(240, 8%, 98%);
+  --ifm-navbar-link-color: hsl(240, 4%, 40%);
+  --ifm-navbar-link-hover-color: hsl(240, 6%, 15%);
+
+  --ifm-footer-background-color: hsl(240, 6%, 96%);
+  --ifm-footer-color: hsl(240, 4%, 40%);
+  --ifm-footer-link-color: hsl(240, 6%, 20%);
+
+  --ifm-menu-link-color: hsl(240, 4%, 40%);
+  --ifm-menu-link-hover-color: hsl(240, 6%, 15%);
+
+  --ifm-table-border-color: hsl(var(--border));
+
+  --docusaurus-highlighted-code-line-bg: rgba(139, 92, 246, 0.12);
+}
+
+/* Global Styles */
+* {
+  border-color: hsl(var(--border));
+}
+
+::selection {
+  background-color: rgba(167, 139, 250, 0.25);
+  color: var(--ifm-color-content);
+}
+
+[data-theme='light'] ::selection {
+  background-color: rgba(139, 92, 246, 0.2);
+  color: var(--ifm-color-content);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-color-content);
+  font-family: 'Source Sans 3', system-ui, -apple-system, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Force font application on all elements */
+* {
+  font-family: inherit;
+}
+
+/* Ensure all text elements use Source Sans 3 */
+p, li, a, span, div, article, section, nav, footer {
+  font-family: 'Source Sans 3', system-ui, -apple-system, sans-serif;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source Sans 3', system-ui, -apple-system, sans-serif !important;
+  font-weight: 700;
+  color: var(--ifm-color-content);
+}
+
+code, pre, kbd, samp, tt {
+  font-family: 'JetBrains Mono', 'Courier New', monospace !important;
+}
+
+/* Ensure code blocks use JetBrains Mono */
+.prism-code, .token, .language-*, [class*="language-"] {
+  font-family: 'JetBrains Mono', 'Courier New', monospace !important;
+}
+
+/* Text Gradient Utilities */
+.text-gradient {
+  background: linear-gradient(to right, var(--voiden-teal), var(--voiden-purple), var(--voiden-pink));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-subtle {
+  background: linear-gradient(to right, white, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Background Gradient */
+.bg-gradient-voiden {
+  background: linear-gradient(to right, var(--voiden-teal), var(--voiden-purple), var(--voiden-pink));
+}
+
+/* Glass Panel Effect */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+}
+
+[data-theme='light'] .glass-panel {
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Items */
+.nav-item {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ifm-navbar-link-color);
+  transition: color 0.2s;
+}
+
+.nav-item:hover {
+  color: var(--ifm-navbar-link-hover-color);
+}
+
+/* Buttons */
+.btn-primary {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(to right, var(--voiden-teal), var(--voiden-purple), var(--voiden-pink));
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  box-shadow: 0 10px 15px -3px rgba(167, 139, 250, 0.25);
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 600;
+  color: var(--ifm-color-content);
+  background: hsl(var(--secondary));
+  border: 1px solid hsl(var(--border));
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+  background: hsl(var(--accent));
+}
+
+/* Section Styles */
+.section-title {
+  font-size: 2rem;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: var(--ifm-color-content);
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+}
+
+.section-subtitle {
+  font-size: 1.25rem;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-content);
+  opacity: 0.9;
+}
+
+@media (min-width: 768px) {
+  .section-subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+.section-text {
+  font-size: 1rem;
+  color: var(--ifm-color-content-secondary);
+  max-width: 42rem;
+  margin: 0 auto;
+  line-height: 1.75;
+}
+
+/* Feature Card */
+.feature-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  height: 100%;
+  transition: all 0.3s;
+}
+
+.feature-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='light'] .feature-card {
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='light'] .feature-card:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.feature-icon {
+  width: 3rem;
+  height: 3rem;
+  color: var(--voiden-teal);
+  margin-bottom: 1rem;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: var(--ifm-navbar-background-color) !important;
+  border-bottom: 1px solid hsl(var(--border));
+}
+
+.navbar__item {
+  color: var(--ifm-navbar-link-color);
+}
+
+.navbar__item:hover {
+  color: var(--ifm-navbar-link-hover-color);
+}
+
+.navbar__brand {
+  color: var(--ifm-color-content);
+}
+
+.navbar__link {
+  color: var(--ifm-navbar-link-color);
+  font-weight: 500;
+}
+
+.navbar__link:hover {
+  color: var(--ifm-navbar-link-hover-color);
+}
+
+/* Sidebar Styling */
+.theme-doc-sidebar-menu {
+  color: var(--ifm-menu-link-color);
+}
+
+.menu__link {
+  color: var(--ifm-menu-link-color);
+}
+
+.menu__link:hover {
+  color: var(--ifm-menu-link-hover-color);
+  background-color: hsl(var(--accent));
+}
+
+.menu__link--active {
+  color: var(--ifm-color-primary);
+  background-color: rgba(167, 139, 250, 0.15);
+}
+
+[data-theme='light'] .menu__link--active {
+  background-color: rgba(139, 92, 246, 0.12);
+}
+
+/* Footer Styling */
+.footer {
+  background-color: var(--ifm-footer-background-color) !important;
+  border-top: 1px solid hsl(var(--border));
+}
+
+.footer__link-item {
+  color: var(--ifm-footer-color);
+}
+
+.footer__link-item:hover {
+  color: var(--ifm-footer-link-color);
+}
+
+/* Code Blocks */
+.prism-code {
+  background-color: hsl(240, 6%, 10%) !important;
+  border: 1px solid hsl(var(--border));
+}
+
+[data-theme='light'] .prism-code {
+  background-color: hsl(240, 6%, 96%) !important;
+}
+
+/* Cards and Content */
+.card {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+}
+
+[data-theme='light'] .card {
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure content areas have proper contrast */
+.main-wrapper {
+  background-color: var(--ifm-background-color);
+}
+
+/* Table Styling */
+table {
+  border-color: hsl(var(--border));
+}
+
+table th {
+  background-color: hsl(var(--muted));
+  color: var(--ifm-color-content);
+}
+
+table td {
+  border-color: hsl(var(--border));
+  color: var(--ifm-color-content-secondary);
+}
+
+[data-theme='light'] table th {
+  background-color: hsl(var(--muted));
+}
