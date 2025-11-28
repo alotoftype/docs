@@ -7,7 +7,7 @@
 
 # Import from OpenAPI
 
-Get started with your existing APIs in seconds! Voiden lets you import OpenAPI specifications and instantly generate ready-to-use API requests.
+Get started with your existing APIs in seconds. Voiden lets you import OpenAPI specifications and instantly generate ready-to-use API requests.
 
 ## Quick Start
 
