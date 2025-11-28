@@ -37,4 +37,3 @@ We want to hear it.
 
 - Raise a  [GitHub Issue ↗](https://github.com/VoidenHQ/feedback/issues/)
 - Join our [Discord ↗](https://discord.gg/XSYCf7JF4F)  
-- Email our [Support Team ↗](mailto:support@voiden.md)
