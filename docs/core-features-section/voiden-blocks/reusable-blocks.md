@@ -4,11 +4,11 @@
   sidebar_label: Reusable Blocks
 ---
 # Reusable Blocks  
-**Because repeating the same thing is for parrots, not humans.**
+**Because repeating the same thing is for parrots, not developers.**
 
 ## What Are Reusable Blocks?
 
-Reusable Blocks are your little time-saving buddies.Instead of typing the same **Voiden** blocks again and again (and again…), you create a block once in a **Voiden** file and reuse it everywhere.
+Reusable Blocks are your little time-saving buddies.Instead of typing the same **Voiden** blocks again and again (and again…), you just create a block once in a **Voiden** file and reuse it everywhere you want.
 
 ---
 
@@ -31,5 +31,5 @@ Reusable Blocks are your little time-saving buddies.Instead of typing the same *
 
 ## Final Note
 
-Reusable Blocks are here to make your documentation process smoother, happier, and lighter.  
-They save your time, reduce mistakes, and honestly, they make you look super organized — even on days when you’re not.
+Reusable Blocks are here to make your API documentation process smoother and lighter.  
+They save your time, reduce copy paste mistakes, and honestly, they make you look super organized — even on days when you are not.
