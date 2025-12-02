@@ -5,7 +5,7 @@
   sidebar_position: 2
 ---
 
-# ✏️ Basic Blocks
+# Basic Blocks
 
 Before diving into the fancy API magic, let’s start with the basics — the everyday building blocks that make up your Voiden document.  
 
@@ -16,7 +16,7 @@ You can add them just like in Markdown, or use Voiden’s **slash commands** (`/
 
 ---
 
-## 🧱 What Are Basic Blocks?
+## What Are Basic Blocks?
 
 Voiden is a visual editor built on top of Markdown.  
 Everything you see — from titles to tables — is still pure Markdown underneath.  
@@ -26,7 +26,7 @@ Basic Blocks help you write documentation, structure your API notes, or format y
 
 ---
 
-## ⚡ How to Use
+## How to Use
 
 Type `/` and you’ll see a list of available blocks:  
 - **Heading 1 / 2 / 3** → For sections and titles  
@@ -39,7 +39,7 @@ You can also just type regular Markdown syntax (`#`, `-`, ````` `````, `>`, etc.
 
 ---
 
-## 🪄 Why It Matters
+## Why It Matters
 
 These blocks are the foundation of your Voiden documents.  
 You can combine them with **REST API blocks** — endpoints, headers, request bodies, and so on — to create live documentation that’s both human-readable and machine-executable.
