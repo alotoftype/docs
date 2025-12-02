@@ -12,7 +12,7 @@ This document gives a high-level overview of how plugins work in Voiden, our cor
 
 ---
 
-## 🔌 What Are Voiden Plugins?
+## What Are Voiden Plugins?
 
 Voiden plugins are modular extensions that allow developers to add new capabilities to the Voiden ecosystem **without modifying the core system**. These plugins can:
 
@@ -26,7 +26,7 @@ Plugins are isolated, secure, and follow Voiden’s strict plugin lifecycle rule
 
 ---
 
-## 🧩 Core Plugins (Official Plugins)
+## Core Plugins (Official Plugins)
 
 Voiden ships with a curated set of **core plugins** that are:
 
@@ -47,7 +47,7 @@ These plugins form the foundation of Voiden and ensure consistency across all in
 
 ---
 
-## 🌍 Community Plugins
+## Community Plugins
 
 Voiden encourages developers from around the world to contribute plugins. Community plugins allow endless customization and innovation.
 
@@ -87,7 +87,7 @@ This ensures that plugins remain safe and reliable for all users.
 
 ---
 
-## 📦 Plugin Marketplace
+## Plugin Marketplace
 
 Once approved, community plugins are published to the **Voiden Plugin Marketplace**, where users can:
 
@@ -99,7 +99,7 @@ The marketplace ensures discoverability and keeps the plugin ecosystem vibrant.
 
 ---
 
-## 📘 Summary
+## Summary
 
 * Voiden supports both **core** and **community** plugins.
 * Core plugins are official, optimized, and pre-installed.
