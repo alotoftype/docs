@@ -10,7 +10,7 @@ The **Voiden REST API Plugin** is a complete, extensible toolkit for building, t
 
 ---
 
-# 🚀 Key Features
+# Key Features
 
 ### **HTTP Request Building**
 
@@ -42,9 +42,9 @@ The **Voiden REST API Plugin** is a complete, extensible toolkit for building, t
 
 ---
 
-# 🧩 Capabilities
+# Capabilities
 
-## 🔷 Block Ownership
+## Block Ownership
 
 This plugin owns **13 custom block types**, enabling structured API request creation and response visualization:
 
@@ -70,7 +70,7 @@ The plugin also allows **block extensions**, enabling future customization and c
 
 ---
 
-## 🔷 Paste Handling
+## Paste Handling
 
 ### **cURL Import**
 
@@ -85,7 +85,7 @@ Automatically parses cURL commands and converts them into:
 
 ---
 
-# 🔗 Dependencies
+# Dependencies
 
 ```json
 {
