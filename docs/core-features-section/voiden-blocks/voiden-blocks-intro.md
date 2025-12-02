@@ -5,10 +5,10 @@
   sidebar_position: 1
 ---
 
-# 🧩 Meet Voiden Blocks
+# Meet Voiden Blocks
 
-Everything inside Voiden is a **Block** — the smallest, most flexible piece of your API universe.  
-Your endpoint? A block. Headers? Blocks. Query params, form inputs, JSON bodies, XML payloads, even binary file attachments — all individual blocks that you can add, remove, or reorder as you build your request.
+This is an important principle of Voiden. Everything inside Voiden is a **Block** : the smallest, most flexible piece of your API world.  
+Your endpoint is a block. Headers are blocks. Query params, form inputs, JSON bodies, XML payloads, even binary file attachments — all are separate individual blocks that you can add, remove, or reorder as you build your request.
 
 ![All Rest API Blocks](/img/voiden-blocks/all-rest-blocks.png)
 
