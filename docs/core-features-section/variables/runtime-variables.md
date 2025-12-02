@@ -77,19 +77,19 @@ Add a `/runtime-variables` block in your voiden file:
 
 # Example Workflow
 
-1. **First request - Login**
+1. **First request**
 
-    In the first request
+    In the first request , add the Runtime block , and attach to a data source for every variable
 
     ![Capture Variable](/img/voiden-blocks/runtime/set.gif)
 
-    And run it by either:  
+    And run the request by either:  
     - Pressing **Cmd + Enter** (on macOS) or **Ctrl + Enter** (on Windows/Linux), **or**  
     - Clicking the bright **green ▶️ Play button** in the toolbar.  
 
-2. **Second request - Use captured values**
+2. **Second request**
 
-    Access those captured variables
+    Reference the variables using `process` anywhere 
 
       ![Access Variable](/img/voiden-blocks/runtime/access-variable.gif)
   
