@@ -18,9 +18,9 @@ Runtime variables are dynamic values that get set during request execution. They
 
 ## Creating Runtime Variables
 
-Add a `runtime_variables` block in your voiden file:
+Add a `/runtime-variables` block in your voiden file:
 
-> SCREEN SHOT OF RUNTIME VARIABLE BLOCK
+![Runtime Variable](/img/voiden-blocks/runtime/variable.gif)
 
 ### Available Data Sources
 
@@ -77,16 +77,21 @@ Add a `runtime_variables` block in your voiden file:
 
 # Example Workflow
 
-**First request - Login**
+1. **First request - Login**
 
-Capture Variables
+    In the first request
 
-  > SCREENSHOT ABOUT THE FIRST REQUEST RUNTIME VARIABLES
+    ![Capture Variable](/img/voiden-blocks/runtime/set.gif)
 
-**Second request - Use captured values**
-Access those captured variables
+    And run it by either:  
+    - Pressing **Cmd + Enter** (on macOS) or **Ctrl + Enter** (on Windows/Linux), **or**  
+    - Clicking the bright **green ▶️ Play button** in the toolbar.  
 
-  > SCREENSHOT ABOUT THE SECOND REQUEST MAKING VARIABLES ACCESS
+2. **Second request - Use captured values**
+
+    Access those captured variables
+
+      ![Access Variable](/img/voiden-blocks/runtime/Access-variable.gif)
   
 
 
