@@ -5,7 +5,7 @@
   sidebar_position: 10
 ---
 
-# 🛣️ Path Params Block
+# Path Params Block
 
 Some APIs embed parameters directly into the **URL** path itself — like `/users/{id}` or `/products/{category}/{item}`.  
 The **Path Params Block** lets you define these dynamic segments as a clean key-value table in **Voiden**, so you can swap values without manually editing your endpoint URL.
