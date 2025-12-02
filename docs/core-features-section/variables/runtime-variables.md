@@ -91,7 +91,7 @@ Add a `/runtime-variables` block in your voiden file:
 
     Access those captured variables
 
-      ![Access Variable](/img/voiden-blocks/runtime/Access-variable.gif)
+      ![Access Variable](/img/voiden-blocks/runtime/access-variable.gif)
   
 
 
