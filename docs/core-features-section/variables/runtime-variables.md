@@ -100,4 +100,5 @@ Add a `/runtime-variables` block in your voiden file:
 - Handle null cases: Ensure the data path exists before using it
 - Test extraction: Verify runtime variables capture the expected values
 - Chain carefully: Make sure dependent requests execute in the correct order
-- Runtime variables transform your isolated API calls into connected workflows! 🔄
+
+Runtime variables transform your isolated API calls into connected workflows! 🔄
