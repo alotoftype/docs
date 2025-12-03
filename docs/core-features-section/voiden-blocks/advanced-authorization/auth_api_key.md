@@ -11,7 +11,7 @@ Voiden supports **API Key Authentication** as a secure and straightforward way t
 
 ---
 
-## 🔐 What Is API Key Authentication?
+## What Is API Key Authentication?
 
 API Key Authentication uses a unique, randomly generated string (the API key) that identifies the calling project or user. When included in a request, Voiden checks the key and grants access if it’s valid.
 
@@ -24,7 +24,7 @@ API Keys are:
 
 ---
 
-## 🚀 How Voiden Implements API Key Auth
+## How Voiden Implements API Key Auth
 
 Voiden provides first-class support for API Key authentication across supported runtimes and API handlers.
 
@@ -38,14 +38,14 @@ In your Voiden Dashboard:
 
 ---
 
-## 📥 Using API Keys in Requests
+## Using API Keys in Requests
 
 Include the API key block in the .void as :
 
 > SCREENSHOT ABOUT THE COMMAND
 ---
 
-## 🔒 Security Recommendations
+## Security Recommendations
 
 * Store keys in **environment variables**.
 * Rotate keys periodically.
@@ -53,7 +53,7 @@ Include the API key block in the .void as :
 
 ---
 
-## 🛑 When Not to Use API Keys
+## When Not to Use API Keys
 
 API Keys are not ideal for:
 
@@ -64,7 +64,7 @@ For user-based authentication, Voiden recommends **OAuth**, **JWT**, or **Sessio
 
 ---
 
-## 🧾 Summary
+## Summary
 
 Voiden supports API Key Authentication as a simple and effective method for authenticating backend or automated services. With easy generation and secure usage, API Keys allow safe and controlled access to your Voiden-powered APIs.
 
