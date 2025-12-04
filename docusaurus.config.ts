@@ -6,8 +6,28 @@ const config: Config = {
   title: 'Voiden',
   tagline: 'You may need this one day',
   favicon: 'img/favicon.ico',
+  scripts: [
+    // 1. External Plausible script
+    {
+      src: "https://plausible.io/js/pa-H4r-TUXssDVyC9JMZIVyL.js",
+      async: true,
+    }
 
+  ],
   headTags: [
+    {
+      tagName: "script",
+      attributes:{},
+      innerHTML: `
+        window.plausible = window.plausible || function(){
+          (plausible.q = plausible.q || []).push(arguments)
+        };
+        plausible.init = plausible.init || function(i){
+          plausible.o = i || {};
+        };
+        plausible.init();
+      `,
+    },
     {
       tagName: 'link',
       attributes: {
