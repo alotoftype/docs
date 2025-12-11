@@ -10,17 +10,14 @@ The **Postman Collection Importer** plugin enables smooth migration from **Postm
 
 ---
 
-## Capabilities
+# How It Works
 
-### **UI Enhancements**
+1. Open the imported file by clicking on your Postman collection in the left panel to view its contents.
+2. Spot the Magic Button — a prominent **"Generate Voiden Files"** button appears as your gateway to automated file creation.
+3. Watch the organization happen as a clean, structured folder is automatically created using your Postman collection's exact name.
+4. Discover your new workflow where every API request is intelligently converted into an individual Voiden file, complete with endpoints, parameters, and configurations.
 
-Adds a new import button in the left sidebar:
-
-* **Button ID:** `postman-import-btn`
-* **Location:** Sidebar (left)
-* **Icon:** `PackageImport`
-* **Tooltip:** *Import Postman Collection*
-* **Description:** Opens a file picker for importing Postman v2.1 JSON files.
+[Discover the complete Voiden Postman import workflow](/docs/getting-started-section/getting-started/postman-imports.md)
 
 ---
 
