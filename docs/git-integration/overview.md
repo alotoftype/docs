@@ -4,7 +4,7 @@
   sidebar_label: Overview
   sidebar_position: 1
 ---
-# ⭐ Voiden Git Collaboration Overview
+#  Voiden Git Collaboration Overview
 
 Voiden’s superpower is its native integration with version control systems like [Git ↗](https://en.wikipedia.org/wiki/Git) and platforms such as GitHub, GitLab. This ensures that your workspaces and API collections remain consistent, synchronized, and always current. It also gives you the flexibility to store collections directly alongside your source code for true project co-location.
 
