@@ -8,6 +8,9 @@
 
 The **Voiden Faker** core plugin enables developers to generate dynamic, realistic test data directly inside Voiden HTTP requests. It integrates seamlessly into the request lifecycle, allowing any text field to be populated using Faker.js expressions.
 
+> Argument support isn’t available just yet, but it’s on our roadmap and something we’re actively working on.
+
+
 **Type:** Core Plugin
 
 Voiden Faker enhances the request-building experience by letting users embed Faker.js function calls inside request bodies, headers, params, and other supported fields.
