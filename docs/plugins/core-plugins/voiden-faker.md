@@ -52,25 +52,14 @@ These values are automatically evaluated during the `pre-send` stage of the requ
 
 ##  Usage Examples
 
-### **Example 1: Generate a Random Name**
+
+![faker](/img/plugins/openapi-collection/faker.gif)
 
 ```json
 {
-  "username": "{{$faker.person.firstName()}}"
+  "email": "{{$faker.internet.email()}}"
 }
 ```
 
-### **Example 2: Fake Email in Headers**
-
-```
-Authorization: Bearer {{$faker.string.uuid()}}
-X-User-Email: {{$faker.internet.email()}}
-```
-
-### **Example 3: Fake Data in Query Params**
-
-```
-?city={{$faker.location.city()}}&age={{$faker.number.int()}}
-```
 ---
 
