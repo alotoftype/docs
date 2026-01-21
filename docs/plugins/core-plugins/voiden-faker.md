@@ -55,6 +55,10 @@ These values are automatically evaluated during the `pre-send` stage of the requ
 
 ![faker](/img/plugins/openapi-collection/faker.gif)
 
+---
+
+### Example of Json Body 
+
 ```json
 {
   "email": "{{$faker.internet.email()}}"
