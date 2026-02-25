@@ -30,8 +30,8 @@ In simple terms, the Variables block provides the “inputs” for your GraphQL 
 
     **Provide Variable Values**  
     - Enter values manually as JSON  
-    - Use [**environment variables**](/docs/core-features-section/variables/enviroment-variables.md)
-    - Use [**runtime variables**](/docs/core-features-section/variables/runtime-variables.md)
+    - Use [**environment variables**](/docs/core-features-section/variables/environment-variables)
+    - Use [**runtime variables**](/docs/core-features-section/variables/runtime-variables)
 
     This gives you flexibility to test different inputs without modifying the query itself.
 
