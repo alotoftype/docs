@@ -19,9 +19,9 @@ const sidebars: SidebarsConfig = {
       defaultStyle: true,
     },
     {
-      type: "doc",
-      id: "getting-started-section/intro",
-      label: "Welcome to Voiden hub",
+      type: 'doc',
+      id: 'getting-started-section/intro',
+      label: 'Welcome to Voiden Hub',
     },
     {
       type: "category",
@@ -75,6 +75,14 @@ const sidebars: SidebarsConfig = {
           items: [
             "core-features-section/voiden-blocks/web-socket",
             "core-features-section/voiden-blocks/grpcs",
+          ],
+        },
+                {
+          type: "category",
+          label: "Pre & Post Script Blocks",
+          items: [
+            "core-features-section/voiden-blocks/pre & post script/pre-script",
+            "core-features-section/voiden-blocks/pre & post script/post-script"
           ],
         },
         {
