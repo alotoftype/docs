@@ -163,6 +163,15 @@ const sidebars: SidebarsConfig = {
           ],
         },
         "plugins/core-plugins/voiden-graphql",
+        {
+          type: "category",
+          label: "Voiden Scripting",
+          items: [
+            "plugins/core-plugins/pre-post script/overview",
+            "plugins/core-plugins/pre-post script/pre-script",
+            "plugins/core-plugins/pre-post script/post-script",
+          ],
+        },
       ],
     },
     {
