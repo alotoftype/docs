@@ -77,14 +77,6 @@ const sidebars: SidebarsConfig = {
             "core-features-section/voiden-blocks/grpcs",
           ],
         },
-                {
-          type: "category",
-          label: "Pre & Post Script Blocks",
-          items: [
-            "core-features-section/voiden-blocks/pre & post script/pre-script",
-            "core-features-section/voiden-blocks/pre & post script/post-script"
-          ],
-        },
         {
           type: "category",
           label: "Authorization",
@@ -105,6 +97,14 @@ const sidebars: SidebarsConfig = {
           items: [
             "core-features-section/voiden-blocks/graphql-query",
             "core-features-section/voiden-blocks/graphql-variable",
+          ],
+        },
+        {
+          type: "category",
+          label: "Pre & Post Script Blocks",
+          items: [
+            "core-features-section/voiden-blocks/pre-post-script/pre-script",
+            "core-features-section/voiden-blocks/pre-post-script/post-script"
           ],
         },
       ],
@@ -163,15 +163,7 @@ const sidebars: SidebarsConfig = {
           ],
         },
         "plugins/core-plugins/voiden-graphql",
-        {
-          type: "category",
-          label: "Voiden Scripting",
-          items: [
-            "plugins/core-plugins/pre-post script/overview",
-            "plugins/core-plugins/pre-post script/pre-script",
-            "plugins/core-plugins/pre-post script/post-script",
-          ],
-        },
+        "plugins/core-plugins/voiden-scripting",
       ],
     },
     {
